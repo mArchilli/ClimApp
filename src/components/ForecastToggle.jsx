@@ -33,7 +33,7 @@ function ForecastToggle({ dailyForecasts, hourlyForecasts }) {
       {/* Contenedor de pronósticos */}
       <div
         className={`grid gap-4 min-h-[200px] ${
-          view === "daily" ? "grid-cols-5" : "grid-cols-4"
+          view === "daily" ? "grid-cols-1 sm:grid-cols-5" : "grid-cols-1 sm:grid-cols-4"
         }`}
       >
         {view === "daily" &&

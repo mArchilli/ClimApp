@@ -92,13 +92,13 @@ function App() {
   return (
     <div className="w-full min-h-screen flex flex-col bg-white text-black">
       <header className="text-blue-600 p-4">
-        <div className="max-w-screen-xl mx-auto flex justify-between items-center">
-          <h1 className="text-xl font-bold">ClimApp</h1>
+        <div className="max-w-screen-xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+          <h1 className="text-xl font-bold mb-4 sm:mb-0">ClimApp</h1>
           <SearchBar onSearch={handleSearch} />
         </div>
       </header>
   
-      <main className="flex-grow max-w-screen-xl mx-auto p-4">
+      <main className="flex-grow max-w-screen-xl md:mx-auto p-4">
         {loading ? (
           <LoadingSpinner />
         ) : error ? (

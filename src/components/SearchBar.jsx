@@ -13,18 +13,21 @@ function SearchBar({ onSearch }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex items-center justify-end w-full">
-      <div className="flex items-center bg-white rounded-full shadow-md">
+    <form
+      onSubmit={handleSubmit}
+      className="flex flex-col sm:flex-row items-center justify-center sm:justify-end w-full"
+    >
+      <div className="flex items-center bg-white rounded-full shadow-md w-full sm:w-auto">
         <input
           type="text"
           placeholder="Buscar ciudad..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="px-6 py-3 text-lg rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 bg-white placeholder-gray-400"
+          className="px-6 py-3 text-lg rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 bg-white placeholder-gray-400 w-full sm:w-auto"
         />
         <button
           type="submit"
-          className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full transition-colors ml-4"
+          className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full transition-colors mt-4 sm:mt-0 sm:ml-4"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
